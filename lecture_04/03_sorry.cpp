@@ -3,6 +3,6 @@ using namespace std;
 
 int main(){
     for( int i=0; i<10001 ; i++){
-        cout<<"sorry bala "<<endl;
+        cout<<"sorry"<<endl;
     }
 }
