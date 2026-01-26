@@ -3,16 +3,23 @@ using namespace std;
 int main() {
     int n;
     cin>>n;
-    int l=0,m=1;
+    int x=0,y=1,o=1;
 
-    for(int i=0;i<=n;i++){
-        if(i==0 || i==1){
-           // cout<<l<<"\t"<<m<<"\t";
-           cout<<i;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=i;j++){
+        if(i==1){
+            cout<<x<<" ";
         }
         else{
-            
+             cout<<o<<" "; 
+            o=x+y;
+            x=y;
+            y=o;
+           
         }
+       
+    }
+       cout<<endl;
     }
 	return 0;
 }
