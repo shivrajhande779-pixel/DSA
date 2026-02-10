@@ -30,4 +30,15 @@ int main(){
 
     //last element 
     cout<<a.back()<<endl;
+
+    // random insert 
+    a.insert(a.begin()+2,99);
+     for(int i=0;i<a.size();i++){
+        cout<<a[i]<<" "<<endl;
+    }
+
+      a.insert(a.begin()+a.size()/2,111);
+     for(int i=0;i<a.size();i++){
+        cout<<a[i]<<" ";
+    }
 }
