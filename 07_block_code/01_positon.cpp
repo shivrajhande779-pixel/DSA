@@ -1,27 +1,27 @@
 #include<iostream>
+#include<vector>
 using namespace std;
+
+vector<int> convert(int n){
+    vector<int> number;
+    while(n!=0){
+        int k=n%10;
+        number.push_back(k);
+        n=n/10;
+    }
+    return number;
+}
 
 int main(){
     int n;
     cin>>n;
-    int p=0;
-    int temp=0;
-    int i=0;
-    int swap=0;
-    int x=0;
-    while(n!=0){
-        p=n%10;
-        n=n/10;
-        i++;
-        temp=p;
-        swap=i;
-
-         //cout<<temp<<" "<<swap<<endl;
-        x=temp;
-        temp=swap;
-        swap=x;
-        
-       cout<<x;
-        
+    vector<int> number=convert(n);
+    vector<int> ans(number.size()+1);
+    for(int i=0;i<number.size();i++){
+        ans[number[i]]=i+1;
     }
+    for(int i=number.size();i>=1;i--){
+        cout<<ans[i];
+    }
+    return 0;
 }
