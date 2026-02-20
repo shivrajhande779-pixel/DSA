@@ -11,7 +11,7 @@ int main(){
     }
 
     for(int i=0;i<n;i++){
-        cout<<"rahil karay ch";
+        cout<<"rahil karay ch"; 
     }
 
 }
