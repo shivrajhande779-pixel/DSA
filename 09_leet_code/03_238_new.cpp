@@ -9,8 +9,8 @@ int main(){
         cin>>a[i];
     }
      for(int i=0;i<n;i++){
-        
+        if(i==1){
         int temp=a[i];
-
+        }
      }
 }
