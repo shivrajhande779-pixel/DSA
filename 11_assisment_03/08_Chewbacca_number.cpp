@@ -14,6 +14,6 @@ int main() {
         }
         //else cout<<" "<<temp;
         j++;
-    `}
+    }
 	return 0;
 }
