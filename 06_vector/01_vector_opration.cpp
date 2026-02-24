@@ -11,6 +11,16 @@ int main(){
     a.push_back(4);
     a.push_back(5);
 
+    //initialies
+
+    cout<<"new type like 5 means 5 intiger sotore hosakte hai 0 : means all position me 0 store hoga ";
+    vector<int> vec(5,0);
+    cout<<vec[0]<<" ";
+    cout<<vec[1]<<" ";
+    cout<<vec[2]<<" ";
+    cout<<vec[3]<<" ";
+    cout<<vec[4]<<" "<<endl;
+
     //size
     cout<<a.size()<<endl;
     for(int i=0;i<a.size();i++){
