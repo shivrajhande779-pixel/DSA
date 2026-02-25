@@ -1,1 +1,1 @@
- // cout<<ans;
+else cout<<"--not -- : "<<i<<endl;
