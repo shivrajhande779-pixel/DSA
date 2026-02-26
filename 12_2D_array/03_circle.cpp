@@ -11,3 +11,4 @@ int main(){
             cin>>a[i][j];
         }
     }
+}
