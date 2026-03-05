@@ -10,7 +10,7 @@ int main(){
     }
     for(int i=0;i<n;i++){
         if(m==a[i]){
-            cout<<"number at "<<i<<" this inderx"
+            cout<<"number at "<<i<<" this inderx";
         }
     }
 }
