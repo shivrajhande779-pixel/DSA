@@ -1,16 +1,23 @@
 #include<iostream>
 using namespace std;
 
+int index(int *a ,int m, int n){
+    for(int i=0;i<n;i++){
+        if(a[i]==m){
+            return i;
+        }
+    }
+    return -1;
+}
+
 int main(){
     int n,m;
-    cin>>n>>m;
+    cin>>n;
     int a[n];
     for(int i=0;i<n;i++){
         cin>>a[i];
     }
-    for(int i=0;i<n;i++){
-        if(m==a[i]){
-            cout<<"number at "<<i<<" this inderx";
-        }
-    }
+    cin>>m;
+    int result=index(a,m,n);
+    cout<<result;
 }
