@@ -22,31 +22,37 @@ int main(){
     cout<<vec[4]<<" "<<endl;
 
     //size
+    cout<<"size : ";
     cout<<a.size()<<endl;
+
+    cout<<"show  : ";
     for(int i=0;i<a.size();i++){
         cout<<a[i]<<" ";
     }
-
+    cout<<endl;
     //delete
     a.pop_back();
     
     //capicity
+    cout<<"capicity  :  ";
     cout<<a.capacity()<<endl;
-    for(int i=0;i<a.size();i++){
-        cout<<a[i]<<" ";
-    }
+   
 
-    //first element 
+    //first element
+    cout<<"show first element : ";
     cout<<a.front()<<endl;
 
     //last element 
+    cout<<"show last element  : ";
     cout<<a.back()<<endl;
 
     // random insert 
+    cout<<"random insert  : ";
     a.insert(a.begin()+2,99);
      for(int i=0;i<a.size();i++){
-        cout<<a[i]<<" "<<endl;
+        cout<<a[i]<<" ";
     }
+    cout<<endl;
 
       a.insert(a.begin()+a.size()/2,111);
      for(int i=0;i<a.size();i++){

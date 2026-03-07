@@ -7,7 +7,7 @@ int main() {
     vector<int> v;
 
     // Add elements using for loop
-    for(int i = 1; i <= 5; i++) {
+    for(int i = 0; i <= 5; i++) {
         v.push_back(i);   // push_back inside loop
     }
 
