@@ -9,10 +9,11 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>a[i];
     }
-
-    
+    double square=0;
     for(int i=0;i<n;i++){
-        cout<<a[i];
+        a[i]= a[i]*a[i];
     }
-
+    for(int i=0;i<n;i++){
+        cout<<a[i]<<" ";
+    }
 }
