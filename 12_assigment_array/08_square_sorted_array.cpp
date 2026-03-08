@@ -9,10 +9,15 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>a[i];
     }
-    double square=0;
+    int max=a[0];
     for(int i=0;i<n;i++){
         a[i]= a[i]*a[i];
     }
+
+    for(int i=0;i<n;i++){
+        
+    }
+
     for(int i=0;i<n;i++){
         cout<<a[i]<<" ";
     }
