@@ -15,7 +15,7 @@ int main(){
             if(a[i]==a[j]){
                 x++;
 
-                if(x>=n*6/10){
+                if(x>n/2){
                     cout<<a[i];
                 }
             }

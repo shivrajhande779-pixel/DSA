@@ -9,18 +9,19 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>a[i];
     }
-    int x=0;
+    
     for(int i=0;i<n;i++){
-        for(int j=i+1;j<n;j++){
-            if(a[i]==a[j]){
-                x++;
-
-                if(x>=n*6/10){
-                    cout<<a[i];
-                }
-            }
-        }
-    }
-   
-}
        
+        int mul=1;
+        for(int j=0;j<n;j++){
+            
+            if(a[i]!=a[j]){
+            mul=mul*a[j];
+            
+            }
+           
+        }
+         cout<<mul<<" ";
+    }
+    
+}
