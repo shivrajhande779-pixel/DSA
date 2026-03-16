@@ -12,8 +12,10 @@ int main(){
     int max=a[0];
     for(int i=0;i<n;i++){
         a[i]= a[i]*a[i];
-    }
 
+
+
+    }
     for(int i=0;i<n;i++){
         cout<<"enter the "<<i;
     }
@@ -22,4 +24,3 @@ int main(){
         cout<<a[i]<<" ";
     }
 }
-|
