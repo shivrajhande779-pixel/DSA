@@ -11,13 +11,13 @@ int main(){
             cin>>a[i][j];
         }
     }
-    int top=0,b=0,r=0,l=0;
+    int top=0,b=0,r=0,l=m;
     for(int i=0;i<m;i++){
-        for(int j=0;j<n;j++){
+        for(int j=top;j<m;j++){
             if(top<n){
                 cout<<a[i][j];
             }
-            
+
         }
     }
     
