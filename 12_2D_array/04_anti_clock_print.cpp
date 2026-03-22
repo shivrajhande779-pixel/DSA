@@ -12,7 +12,7 @@ int main (){
 		}
 	}
 
-    int top=0,bottom=m-1,left=n,right=0;
+    int top=0,bottom=m-1,left=n-1,right=0;
     for(int i=0;i<m;i++){
 
         //right
@@ -25,9 +25,19 @@ int main (){
         for(int b=right;b<n;b++){   
             cout<<a[bottom][b];
         }
+        bottom--;
 
         // left
-        for(int )
+        for(int l=bottom;l<=0;l--){
+            cout<<a[l][n];
+        }
+        left--;
+        
+        //top
+        for(int t=left;t>=0;t--){
+            cout<<a[i][left];
+        }
+        top++;
 
     }
 }
