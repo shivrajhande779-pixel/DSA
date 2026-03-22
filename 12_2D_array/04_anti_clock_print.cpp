@@ -11,33 +11,38 @@ int main (){
 			cin>>a[i][j];
 		}
 	}
-
-    int top=0,bottom=m-1,left=n-1,right=0;
-    for(int i=0;i<m;i++){
+    int i=0;
+    int top=0,bottom=m,left=n,right=0;
+    while(top==bottom){
 
         //right
-        for(int j=right;j<m;j++){
-            cout<<a[j][i];
+        for(int j=top;j<bottom;j++){
+            cout<<a[j][i]<<" ";
         }
         right++;
+        cout<<" : right"<<endl;
 
         //bottom
-        for(int b=right;b<n;b++){   
-            cout<<a[bottom][b];
+        for(int b=right;b<left;b++){   
+            cout<<a[bottom][b]<<" ";
         }
         bottom--;
+        cout<<" : bottom"<<endl;
+
 
         // left
-        for(int l=bottom;l<=0;l--){
-            cout<<a[l][n];
+        for(int l=bottom;l>=0;l--){
+            cout<<a[l][n]<<" ";
         }
         left--;
+        cout<<" : left"<<endl;
         
         //top
         for(int t=left;t>=0;t--){
-            cout<<a[i][left];
+            cout<<a[i][left]<<" ";
         }
         top++;
-
+         cout<<" : top"<<endl;
+        i++;
     }
 }
