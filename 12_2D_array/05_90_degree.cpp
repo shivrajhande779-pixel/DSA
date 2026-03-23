@@ -6,7 +6,6 @@ int main(){
     int m,n;
     cin>>m>>n;
     int a[m][n];
-    int s[m][n];
 
     for(int i=0;i<m;i++){
         for(int j=0;j<n;j++){
@@ -25,15 +24,14 @@ int main(){
     cout<<endl;
      for(int i=0;i<m;i++){
         for(int j=0;j<n;j++){
-            s[j][i] =    a[i][n-j-1];
-           // cout<<"store "<<j<<i<<" "<<i<<n-j-1<<" ---: "<<s[j][i]<<" --- this : "<<a[i][n-j-1]<<"      ";
+            swap(a[i][n-j-1],a[j][i]);
+
         }
-       cout<<endl;
     }
     cout<<"-------after swap-----"<<endl;
     for(int i=0;i<m;i++){
         for(int j=0;j<n;j++){
-            cout<<s[i][j]<<" ";
+            cout<<a[i][j]<<" ";
         }
         cout<<endl;
     }
