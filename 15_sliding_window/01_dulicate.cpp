@@ -9,5 +9,6 @@ int main(){
     int temp=0;
     for(int i=0;i<n;i++){
         cout<<" nshdbchvsd hbhsd   hb hjh ";
+        cout<<"t shg sahc jhsvcshav xhh h kKK";
     }
 }
