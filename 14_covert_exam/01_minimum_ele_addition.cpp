@@ -9,6 +9,11 @@ int main(){
     for(int i=0;i<m;i++){
         cin>>a[i];
     }
-
-    for
+    int max=0;
+    for(int i=1;i<=m;i++){
+        max=max+i;
+    }
+    for(int i=0;i<max;i++){
+        cout<<i;
+    }
 }
