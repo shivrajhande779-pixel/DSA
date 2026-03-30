@@ -5,7 +5,7 @@ int main(){
     cin>>s;
         long long n=0;
         for(int i=0;i<s.length();i++){
-            char p=s[];
+            char p;
             char ch=s[i];
             if(ch=='I' ){
                 n=n+1;

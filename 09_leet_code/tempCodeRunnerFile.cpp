@@ -1,3 +1,4 @@
- a[m]=temp;
-        // cout<<a[m]<<endl;
-        // ++m;
+  // if(ans){
+        //     cout<<true;
+        // }
+        // else cout<<false;
