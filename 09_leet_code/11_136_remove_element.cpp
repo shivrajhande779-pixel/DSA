@@ -1,28 +1,41 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+
 int main(){
 
     vector<int> nums;
+    nums.push_back(2);
+    nums.push_back(2);
+    nums.push_back(1);
+    // nums.push_back(1);
+    // nums.push_back(2);
 
-    for(int i=0;i<)
         int ans=0;
         if(nums.size()==1){
-            return nums[0];
+            cout<<nums[0]<<" t ";
         }
         for(int i=0;i<nums.size();i++){
             int temp=nums[i];
             for(int j=i+1;j<nums.size();j++){
                 if(temp==nums[j]){
-                    nums.erase(nums.begin() + j);
-                    nums.erase(nums.begin() + i);
+                    nums[j]=0;
+                    nums[i]=0;
                 }
             }
         }
         for(int i=0;i<nums.size();i++){
-           ans=nums[i];
-        }
+           if(nums[i]!=0){
+            ans=nums[i];
+           }
+        //     int temp=nums[i];
+        //      for(int j=i+1;j<nums.size();j++){
+        //         if(temp!=0){
+        //             ans=nums[j];
+        //             break;
+        //         }
         
-        return ans;
+        // }
+        }
+       cout<<ans;
     }
-};
