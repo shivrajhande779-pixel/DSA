@@ -30,7 +30,7 @@ int main(){
                     double pp=kk/2; 
                     cout<< pp;
                 }
-                else{
+                else{jhbhbh
                     int mid=m/2;
                     int tt=num1[mid];
                     cout<< tt;
