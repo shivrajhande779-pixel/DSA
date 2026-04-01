@@ -1,4 +1,4 @@
-  // if(ans){
-        //     cout<<true;
+ // else{
+        //     int mid=s/2+1;
+        //     u=mid;
         // }
-        // else cout<<false;
