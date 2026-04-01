@@ -9,6 +9,5 @@ int main(){
     while(mid!=0){
         int sum=mid*mid;
 
-        if(`)
-    }
+        }
 }
