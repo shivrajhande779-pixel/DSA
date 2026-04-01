@@ -30,7 +30,7 @@ int main(){
                     double pp=kk/2; 
                     cout<< pp;
                 }
-                else{jhbhbh
+                else{
                     int mid=m/2;
                     int tt=num1[mid];
                     cout<< tt;
@@ -42,7 +42,7 @@ int main(){
                     int mid2=mid+1;
                     float kk= (num2[mid] + num2[mid2]);
                     double pp=kk/2; 
-                    cout<<pp;
+                    cout<<kk<<" ";
                     cout<< pp;
                 }
                 else{
@@ -52,6 +52,7 @@ int main(){
                 }
             }
         }
+        else{ 
         vector<int> v;
         int q=0; 
         for(int i=0;i<p;i++){
@@ -65,20 +66,20 @@ int main(){
         }
 
         cout<<endl;
-        cout<<" before sort "<<endl;
-        for(int i = 0; i < v.size(); i++) {
-        cout << v[i]<<" ";
-        }
+        // cout<<" before sort "<<endl;
+        // for(int i = 0; i < v.size(); i++) {
+        // cout << v[i]<<" ";
+        // }
         cout<<endl;
 
 
         sort(v.begin(), v.end());
 
-        cout<<" after sort "<<endl;
-        for(int i = 0; i < v.size(); i++) {
-        cout << v[i]<<" ";
-        }
-        cout<<endl;
+        // cout<<" after sort "<<endl;
+        // for(int i = 0; i < v.size(); i++) {
+        // cout << v[i]<<" ";
+        // }
+        // cout<<endl;
 
         int s=v.size();
         cout<<" this is s size : "<<s<<endl;
@@ -98,4 +99,5 @@ int main(){
         cout<<endl;
         cout<<"the median is : "<<pi;
         cout<< 0;
+    }
     }
