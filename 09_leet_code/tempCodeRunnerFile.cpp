@@ -1,1 +1,3 @@
- r.push_back('M');
+ if(str==goal){
+            ans=true;
+        }
