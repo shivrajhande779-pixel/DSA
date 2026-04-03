@@ -14,4 +14,9 @@
     for(int i =0;i<a.size();i++){
         p.push_back(f[i]);
     }
+     vector<int> r;
+    int q[5]={1,2,3,4,5}
+    for(int i =0;i<a.size();i++){
+        r.push_back(q[i]);
+    }
 }
