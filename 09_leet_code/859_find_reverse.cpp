@@ -24,10 +24,13 @@ int main(){
       
         if(str==goal){
             ans=true;
+            
         }
         
         if(ans){
             cout<<"true";
         }
         else cout<<"false";
+
+        return 0;
 }
