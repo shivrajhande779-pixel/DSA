@@ -36,5 +36,9 @@ int main(){
             cout<<"true";
         }
         else cout<<"false";
+          if(ans){
+            cout<<"true";
+        }
+        else cout<<"false";
         return 0;
 }
