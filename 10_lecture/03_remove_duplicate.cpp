@@ -9,5 +9,6 @@ int main() {
 
     for (int x : v) {
         cout << x << " ";
+         cout << x << " "<<endl;
     }
 }
