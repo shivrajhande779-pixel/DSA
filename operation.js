@@ -30,4 +30,12 @@ console.log(q3arr);
 
 // get square of even number
 
-const number1= {}
+const number1= [,1,2,3,4,5,6,7,8];
+
+const result = number1
+  .filter(num => num % 2 === 0) // even numbers
+  .map(num => num * num);       // square them
+
+console.log(result);
+
+// 
