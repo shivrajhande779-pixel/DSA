@@ -1,4 +1,4 @@
-// for array letter convert upper word
+// // for array letter convert upper word
 
 const name=["gagan","ishan","yogesh"];
 
@@ -16,3 +16,18 @@ let product=[
 const q2=product.map(product =>product.name);
 console.log(q2);
 
+// above the 18
+
+let user=[
+    { names : "A", age : 18},
+     { names : "B", age : 20},
+     { names :"C", age :21},
+];
+
+let q3arr= user.filter(user =>user.age > 18); 
+console.log(q3arr);
+
+
+// get square of even number
+
+const number1= {}
