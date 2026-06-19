@@ -38,4 +38,13 @@ const result = number1
 
 console.log(result);
 
-// 
+
+// avarage
+
+const m1=[10,20,30,40,50];
+
+let avg= m1.reduce((total,num) => total + num ,0)/m1.length;
+console.log(avg);
+
+
+// finds similar name

@@ -1,18 +1,7 @@
-
-// const marks = [
-//     { name : "john", mark : [80,90,85]},
-//     { name: "Emma", mark : [95, 92, 98] } 
+let product=[
+//     { id: 1,name : "laptop"},
+//      { id: 1,name : "samrtphone"},
+//       { id: 1,name : "TV"},
 // ]
-// let students = [];
-
-// const totalmarks = marks.reduce((sum ,marks) => sum + marks.mark ,0);
-//  let avg= totalmarks/3;
-
-//     students.push({
-//         name,
-//         average: avg
-//     });
-
-
-// console.log(students);
-
+// const q2=product.map(product =>product.name);
+// console.log(q2);
