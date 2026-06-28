@@ -1,130 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM & BOM Project</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 30px;
-            background: linear-gradient(to right, #74ebd5, #9face6);
-        }
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        text-align:center;
+        padding:30px;
+        background:linear-gradient(to right,#74ebd5,#9face6);
+    }
 
-        .container {
-            background: white;
-            width: 400px;
-            margin: auto;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px gray;
-        }
+    .container{
+        background:white;
+        width:400px;
+        margin:auto;
+        padding:20px;
+        border-radius:10px;
+        box-shadow:0 0 10px gray;
+    }
 
-        input {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-        }
+    input{
+        padding:10px;
+        width:80%;
+        margin:10px;
+    }
 
-        button {
-            padding: 10px 15px;
-            margin: 5px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            background-color: #4CAF50;
-            color: white;
-        }
+    button{
+        padding:10px 15px;
+        margin:5px;
+        cursor:pointer;
+    }
 
-        button:hover {
-            background-color: #45a049;
-        }
-
-        #output {
-            margin-top: 15px;
-            font-size: 18px;
-            font-weight: bold;
-        }
-
-        #clock {
-            margin-top: 15px;
-            font-size: 22px;
-            color: darkblue;
-        }
-    </style>
+    #output{
+        margin-top:15px;
+        font-size:18px;
+        font-weight:bold;
+    }
+</style>
 </head>
 <body>
 
-    <div class="container">
-        <h2>DOM & BOM Demo Page</h2>
+<div class="container">
+    <h2>DOM & BOM Demo</h2>
 
-        <input type="text" id="nameInput" placeholder="Enter your name">
+    <input type="text" id="nameInput" placeholder="Enter your name">
 
-        <br>
+    <br>
 
-        <button onclick="showGreeting()">Show Greeting</button>
-        <button onclick="changeColor()">Change Color</button>
-        <button onclick="showBrowserInfo()">Browser Info</button>
+    <button onclick="showGreeting()">Show Greeting</button>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="showBrowserInfo()">Browser Info</button>
+    <button onclick="openClock()">Open Clock</button>
 
-        <div id="output"></div>
+    <div id="output"></div>
+</div>
 
-        <h3>Live Clock</h3>
-        <div id="clock"></div>
-    </div>
+<script>
+    // DOM Manipulation
+    function showGreeting() {
+        let name = document.getElementById("nameInput").value;
 
-    <script>
-        // DOM Manipulation - Greeting
-        function showGreeting() {
-            let name = document.getElementById("nameInput").value;
+        document.getElementById("output").innerHTML =
+            name ? "Welcome, " + name + " 🎉" : "Please enter your name!";
+    }
 
-            if (name === "") {
-                document.getElementById("output").innerHTML =
-                    "Please enter your name!";
-            } else {
-                document.getElementById("output").innerHTML =
-                    "Welcome, " + name + " 🎉";
-            }
-        }
+    // DOM Manipulation
+    function changeColor() {
+        let colors = ["#FFD700","#90EE90","#87CEEB","#FFB6C1","#FFA07A"];
+        let randomColor =
+            colors[Math.floor(Math.random() * colors.length)];
 
-        // DOM Manipulation - Change Background Color
-        function changeColor() {
-            let colors = [
-                "#FFD700",
-                "#90EE90",
-                "#87CEEB",
-                "#FFB6C1",
-                "#FFA07A",
-                "#DDA0DD"
-            ];
+        document.body.style.backgroundColor = randomColor;
+    }
 
-            let randomColor =
-                colors[Math.floor(Math.random() * colors.length)];
+    // BOM
+    function showBrowserInfo() {
+        alert(
+            "Browser: " + navigator.userAgent +
+            "\n\nURL: " + location.href +
+            "\nWindow Width: " + window.innerWidth + " px"
+        );
+    }
 
-            document.body.style.background = randomColor;
-        }
+    // BOM + DOM (Clock in New Page)
+    function openClock() {
+        let clockWindow = window.open("", "_blank", "width=400,height=250");
 
-        // BOM - Show Browser Info in Alert
-        function showBrowserInfo() {
-            alert(
-                "Browser Info\n\n" +
-                "Browser: " + navigator.userAgent +
-                "\n\nCurrent URL: " + location.href +
-                "\n\nWindow Width: " + window.innerWidth + " px"
-            );
-        }
+        clockWindow.document.write(`
+            <html>
+            <head>
+                <title>Live Clock</title>
+                <style>
+                    body{
+                        font-family:Arial;
+                        text-align:center;
+                        margin-top:70px;
+                        background:#f4f4f4;
+                    }
+                    #clock{
+                        font-size:45px;
+                        color:darkblue;
+                        font-weight:bold;
+                    }
+                </style>
+            </head>
+            <body>
+                <h2>Live Digital Clock</h2>
+                <div id="clock"></div>
 
-        // BOM - Live Clock
-        function updateClock() {
-            let now = new Date();
-            document.getElementById("clock").innerHTML =
-                now.toLocaleTimeString();
-        }
+                <script>
+                    function updateClock(){
+                        document.getElementById('clock').innerHTML =
+                        new Date().toLocaleTimeString();
+                    }
 
-        setInterval(updateClock, 1000);
-        updateClock();
-    </script>
+                    setInterval(updateClock,1000);
+                    updateClock();
+                <\/script>
+            </body>
+            </html>
+        `);
+    }
+</script>
 
 </body>
 </html>
