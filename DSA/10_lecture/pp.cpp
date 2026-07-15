@@ -2,12 +2,12 @@
 using namespace std;
 
 int main(){
-    int n,even=0,odd=0,j=0;
-    cin>>n;
+    int m,even=0,odd=0,j=0;
+    cin>>m;
 
-    while(n!=0){
-        int temp=n%10;
-        n=n/10;
+    while(m!=0){
+        int temp=m%10;
+        m=m/10;
         if(j%2==0){
             even=even+temp;
         }
