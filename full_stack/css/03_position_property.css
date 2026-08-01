@@ -1,0 +1,53 @@
+h1{
+    text-align: center;
+}
+
+#a1{
+    height: 200px;
+    width: 200px;
+    background-color: hotpink;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    position: fixed;
+    top: 5px;
+    background-image: url(amravati.jpg);
+    background-size: cover;
+}
+#a2{
+    height: 200px;
+    width: 200px;
+    background-color: hotpink;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    top : 20px; /*shift from original position to downward 20px*/
+    background-image: url(pune.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;/* image was no repeact*/
+
+}
+#a3{
+    height: 300px;
+    width: 300px;
+    background-color: hotpink;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    position: absolute; /*shift base on parent*/
+    top: 230px;
+    left: 100px;
+    background-image: url(mumbai.jpg);
+    background-size: auto;
+}
+#a4{
+    height: 00px;
+    width: 100px;
+    background-color: hotpink;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    position: sticky; /* when size come it stick their*/
+    top : 50px;
+}
