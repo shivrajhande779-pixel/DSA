@@ -10,6 +10,7 @@ int fibbo(int n){
 
 int main(){
     int n;
+    int m=0;
     cin>>n;
     int g=0;
 
