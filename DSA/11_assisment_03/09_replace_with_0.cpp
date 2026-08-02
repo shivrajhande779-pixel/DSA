@@ -1,9 +1,9 @@
-#include<iostream>
+as#include<iostream>
 #include<cmath>
 using namespace std;
 
 int main(){
-    int n,temp;
+    int n,m,temp;
     double result,sum;
     cin>>n;
     int o=n;
