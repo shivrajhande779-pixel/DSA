@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f7f2ec;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    width:400px;
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.logo{
+    width:48px;
+    height:48px;
+    background:#d36f0b;
+    border-radius:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    font-size:22px;
+}
+
+h1{
+    text-align:center;
+    margin-top:15px;
+    color:#1e293b;
+    font-size:32px;
+}
+
+.sub-title{
+    text-align:center;
+    color:#8a8a8a;
+    margin:10px 0 30px;
+    font-size:14px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    color:#444;
+    font-size:14px;
+    font-weight:600;
+}
+
+.input-box{
+    position:relative;
+    margin-bottom:18px;
+}
+
+.input-box input,
+.input-box select{
+    width:100%;
+    height:48px;
+    border:1px solid #e4e4e4;
+    border-radius:10px;
+    padding-left:42px;
+    padding-right:40px;
+    outline:none;
+    font-size:15px;
+    color:#555;
+}
+
+.input-box select{
+    appearance:none;
+    cursor:pointer;
+    background:#fff;
+}
+
+.input-box i{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    color:#999;
+}
+
+.input-box i:first-child{
+    left:15px;
+}
+
+.eye{
+    right:15px;
+    cursor:pointer;
+}
+
+button{
+    width:100%;
+    height:48px;
+    border:none;
+    background:#d36f0b;
+    color:#111;
+    font-size:17px;
+    font-weight:bold;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#d36f0b;
+}
+
+.login{
+    text-align:center;
+    margin-top:20px;
+    color:#777;
+    font-size:14px;
+}
+
+.login a{
+    text-decoration:none;
+    color:#d36f0b;
+    font-weight:bold;
+}

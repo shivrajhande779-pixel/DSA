@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Luxe — Find Your Perfect Stay</title>
+  <meta name="description" content="Discover and book luxury hotels worldwide. Exclusive deals, premium properties, and seamless booking experience." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- ── Navigation ───────────────────────────────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">🏨</div>
+        Hotel<span>Luxe</span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="pages/hotels.html" class="nav-link">Hotels</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#testimonials" class="nav-link">Reviews</a>
+      </div>
+
+      <div class="nav-actions" id="navActions">
+        <!-- Injected by auth.js -->
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Hero Section ──────────────────────────────────── -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">✦ Premium Hotel Booking Platform</div>
+      <h1 class="hero-title">
+        Discover Your Perfect<br />
+        <span>Luxury Escape</span>
+      </h1>
+      <p class="hero-subtitle">
+        Explore thousands of handpicked luxury hotels across the world. Book effortlessly with the best prices guaranteed.
+      </p>
+
+      <!-- Search Box -->
+      <div class="search-box">
+        <div class="search-title">
+          🔍 Search Hotels
+        </div>
+        <div class="search-grid" id="searchGrid">
+          <div class="search-field">
+            <label for="searchCity">City or Destination</label>
+            <input type="text" id="searchCity" placeholder="e.g. Mumbai, Delhi, Goa..." />
+          </div>
+          <div class="search-field">
+            <label for="searchCheckIn">Check-In</label>
+            <input type="date" id="searchCheckIn" />
+          </div>
+          <div class="search-field">
+            <label for="searchCheckOut">Check-Out</label>
+            <input type="date" id="searchCheckOut" />
+          </div>
+          <div class="search-field">
+            <label for="searchGuests">Guests</label>
+            <select id="searchGuests">
+              <option value="1">1 Guest</option>
+              <option value="2" selected>2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5+ Guests</option>
+            </select>
+          </div>
+          <button class="search-btn" id="heroSearchBtn" onclick="handleHeroSearch()">
+            🔍 Search
+          </button>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Luxury Hotels</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50K+</div>
+          <div class="stat-label">Happy Guests</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100+</div>
+          <div class="stat-label">Cities Covered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4.9★</div>
+          <div class="stat-label">Average Rating</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cta" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+      <span>Scroll Down</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ── Why Choose Us ─────────────────────────────────── -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Why Choose Us</div>
+        <h2 class="section-title">The <span class="text-accent">HotelLuxe</span> Advantage</h2>
+        <p class="section-subtitle">We make every journey extraordinary with curated experiences, seamless booking, and world-class hospitality.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🏆</div>
+          <h3 class="feature-title">Verified Luxury Hotels</h3>
+          <p class="feature-desc">Every property is hand-verified by our team for quality, cleanliness, and authentic luxury standards.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3 class="feature-title">Best Price Guarantee</h3>
+          <p class="feature-desc">Find a better price? We'll match it and give you an extra 10% off. No hidden fees, no surprises.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Instant Confirmation</h3>
+          <p class="feature-desc">Receive your booking confirmation instantly. No waiting, no uncertainty — just seamless booking.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3 class="feature-title">Global Reach</h3>
+          <p class="feature-desc">Browse over 500 properties in 100+ cities across India and beyond. Your perfect stay awaits.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3 class="feature-title">Secure Payments</h3>
+          <p class="feature-desc">Bank-grade encryption protects your data. Multiple payment options for your convenience.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3 class="feature-title">24/7 Support</h3>
+          <p class="feature-desc">Our dedicated support team is available round the clock to assist you with any queries or concerns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Featured Hotels ────────────────────────────────── -->
+  <section class="section" id="featured-hotels">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Featured Properties</div>
+        <h2 class="section-title">Handpicked <span class="text-accent">Luxury Hotels</span></h2>
+        <p class="section-subtitle">Discover our most loved properties, selected for their exceptional service and breathtaking locations.</p>
+      </div>
+
+      <div class="hotels-grid" id="featuredHotels">
+        <!-- Injected by home.js -->
+        <div class="loader-wrap">
+          <div class="spinner"></div>
+          <p>Loading featured hotels...</p>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:40px;">
+        <a href="pages/hotels.html" class="btn btn-outline btn-lg">View All Hotels →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Testimonials ───────────────────────────────────── -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Guest Reviews</div>
+        <h2 class="section-title">What Our <span class="text-accent">Guests Say</span></h2>
+        <p class="section-subtitle">Real experiences from real travelers who discovered their perfect stays with HotelLuxe.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Absolutely seamless experience from search to check-out. The Taj in Mumbai exceeded every expectation. Will definitely book again!</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">A</div>
+            <div>
+              <div class="author-name">Arjun Sharma</div>
+              <div class="author-location">📍 New Delhi</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Found incredible deals on beachfront properties in Goa. The booking process was incredibly smooth and the hotel was everything promised.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">P</div>
+            <div>
+              <div class="author-name">Priya Nair</div>
+              <div class="author-location">📍 Bangalore</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">As a frequent business traveler, HotelLuxe has become my go-to platform. The verified listings save so much time and the support team is stellar.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div>
+              <div class="author-name">Rahul Mehta</div>
+              <div class="author-location">📍 Mumbai</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA Section ────────────────────────────────────── -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Find Your <span class="text-accent">Perfect Stay?</span></h2>
+      <p>Join over 50,000 happy travelers who have discovered the joy of effortless hotel booking.</p>
+      <div class="cta-btns">
+        <a href="pages/hotels.html" class="btn btn-primary btn-lg">Browse Hotels</a>
+        <a href="pages/register.html" class="btn btn-ghost btn-lg" id="ctaRegisterBtn">Create Free Account</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">🏨 Hotel<span>Luxe</span></div>
+          <p class="footer-desc">Discover the world's finest hotels with unmatched service and luxury. Your perfect stay is just a click away.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn">𝕏</a>
+            <a href="#" class="social-btn">f</a>
+            <a href="#" class="social-btn">in</a>
+            <a href="#" class="social-btn">▶</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="pages/hotels.html">All Hotels</a>
+            <a href="#">Luxury Collection</a>
+            <a href="#">Business Hotels</a>
+            <a href="#">Resort & Spa</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Account</h4>
+          <div class="footer-links">
+            <a href="pages/register.html">Sign Up</a>
+            <a href="pages/login.html">Login</a>
+            <a href="pages/profile.html">My Profile</a>
+            <a href="pages/booking-history.html">My Bookings</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <div class="footer-links">
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 HotelLuxe. All rights reserved. Built with ❤️ for B.Tech Final Year Project.</p>
+        <p><a href="pages/login.html">Owner Login</a> · <a href="pages/register.html?role=owner">List Your Hotel</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Toast Container ────────────────────────────────── -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- ── Scripts ────────────────────────────────────────── -->
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

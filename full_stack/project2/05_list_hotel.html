@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Your Property</title>
+
+    <link rel="stylesheet" href="05_list_hotel.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        <i class="fa-solid fa-hotel"></i>
+    </div>
+
+    <h1>List Your Property</h1>
+
+    <p class="subtitle">
+        Reach thousands of travelers by listing your hotel.
+    </p>
+
+    <form>
+
+        <label>Hotel Name</label>
+        <div class="input-box">
+            <i class="fa-solid fa-hotel"></i>
+            <input type="text" placeholder="Hotel Sunshine">
+        </div>
+
+        <label>Owner Name</label>
+        <div class="input-box">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Rahul Sharma">
+        </div>
+
+        <label>Email Address</label>
+        <div class="input-box">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="hotel@gmail.com">
+        </div>
+
+        <label>Mobile Number</label>
+        <div class="input-box">
+            <i class="fa-solid fa-phone"></i>
+            <input type="tel" placeholder="+91 9876543210">
+        </div>
+
+        <label>Hotel Address</label>
+        <textarea placeholder="Enter Complete Hotel Address"></textarea>
+
+        <label>City</label>
+        <div class="input-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Indore">
+        </div>
+
+        <label>Hotel Type</label>
+        <select>
+            <option>Select Hotel Type</option>
+            <option>Hotel</option>
+            <option>Resort</option>
+            <option>Villa</option>
+            <option>Apartment</option>
+            <option>Homestay</option>
+        </select>
+
+        <label>Room Type</label>
+        <select>
+            <option>Select Room Type</option>
+            <option>Single Room</option>
+            <option>Double Room</option>
+            <option>Deluxe Room</option>
+            <option>Suite</option>
+            <option>Family Room</option>
+        </select>
+
+        <label>Total Rooms</label>
+        <div class="input-box">
+            <i class="fa-solid fa-bed"></i>
+            <input type="number" placeholder="50">
+        </div>
+
+        <label>Price Per Night (₹)</label>
+        <div class="input-box">
+            <i class="fa-solid fa-indian-rupee-sign"></i>
+            <input type="number" placeholder="2500">
+        </div>
+
+        <label>Amenities</label>
+
+        <div class="amenities">
+
+            <label><input type="checkbox"> Free WiFi</label>
+
+            <label><input type="checkbox"> Air Conditioner</label>
+
+            <label><input type="checkbox"> Parking</label>
+
+            <label><input type="checkbox"> Swimming Pool</label>
+
+            <label><input type="checkbox"> Restaurant</label>
+
+            <label><input type="checkbox"> Gym</label>
+
+            <label><input type="checkbox"> Breakfast</label>
+
+            <label><input type="checkbox"> Pet Friendly</label>
+
+        </div>
+
+        <label>Upload Hotel Image</label>
+
+        <input class="file" type="file">
+
+        <label>Description</label>
+
+        <textarea placeholder="Write about your hotel..."></textarea>
+
+        <button type="submit">
+            List My Property
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

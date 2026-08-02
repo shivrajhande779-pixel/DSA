@@ -51,3 +51,8 @@ h1{
     position: sticky; /* when size come it stick their*/
     top : 50px;
 }
+
+div:hover{
+    background-color: chartreuse;
+    color: white;
+}
