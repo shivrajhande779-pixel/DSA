@@ -78,7 +78,7 @@ public:
         string str = "({[]})";
         bool ans = s.isValid(str);
         if(ans){
-            cout<<"Valid Parenthesis"<<endl;
+            cout<<"Valid Parenthesis the parentheses are valid."<<endl;
         }
         else{
             cout<<"Invalid Parenthesis"<<endl;
