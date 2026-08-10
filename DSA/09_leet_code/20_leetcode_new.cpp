@@ -28,7 +28,7 @@ public:
                     return false;
 
                 if (c == ']' && top != '[')
-                    return false;
+                    return true;
             }
         }
 
