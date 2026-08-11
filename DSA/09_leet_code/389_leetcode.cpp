@@ -34,7 +34,7 @@ int main() {
 
     char result = obj.findTheDifference(s, t);
 
-    cout << "Difference: " << result << endl;
+    cout << "Difference is: " << result << endl;
 
     return 0;
 }
