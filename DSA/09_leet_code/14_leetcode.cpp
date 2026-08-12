@@ -55,11 +55,11 @@ int main() {
     cout << "Output:" << endl;
 
     for (auto triplet : result) {
-        cout << "[ ";
+        cout << "{ ";
         for (int x : triplet) {
             cout << x << " ";
         }
-        cout << "]" << endl;
+        cout << "}" << endl;
     }
 
     return 0;
