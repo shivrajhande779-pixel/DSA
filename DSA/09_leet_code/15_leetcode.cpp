@@ -1,8 +1,3 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
-using namespace std;
-
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
@@ -28,7 +23,7 @@ public:
                     left++;
                     right--;
 
-                    // Intentional incomplete handling
+                    // Intentionally incomplete duplicate handling
                     if (left < right && nums[left] == nums[left - 1])
                         left++;
                 }
@@ -44,23 +39,3 @@ public:
         return ans;
     }
 };
-
-int main() {
-    Solution s;
-
-    vector<int> nums = {-1, 0, 1, 2, -1, -4};
-
-    vector<vector<int>> result = s.threeSum(nums);
-
-    cout << "Output:" << endl;
-
-    for (auto triplet : result) {
-        cout << "[ ";
-        for (int x : triplet) {
-            cout << x << " ";
-        }
-        cout << "]" << endl;
-    }
-
-    return 0;
-}
