@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Tag Input</h1>
+
+    <form>
+
+        input text : 
+        <!-- input text -->
+        <input type="text" name="name" placeholder="Enter your name"><br><br>
+
+        input email : 
+        <!-- input email -->
+        <input type="email" name="email" placeholder="Enter your email"><br><br>
+
+        input password : 
+        <!-- input password -->
+        <input type="password" name="password" placeholder="Enter your password"><br><br>
+
+        input number : 
+        <!-- input number -->
+        <input type="number" name="age" placeholder="Enter your age"><br><br>
+
+        input date :
+        <!-- input date -->
+        <input type="date" name="birthdate" placeholder="Enter your birthdate"><br><br>
+
+        input time :
+        <!-- input time -->
+        <input type="time" name="time" placeholder="Enter your time"><br><br>
+
+        input color :
+        <!-- input color -->
+        <input type="color" name="favorite_color" placeholder="Enter your favorite color"><br><br>
+
+        input submit :
+        <!-- input submit -->
+        <input type="submit" value="Submit"><br><br><br><br>
+
+        <!-- button for submit and reset-->
+         <button type="reset">Reset</button>
+        <button type="button">Click Me</button>
+    </form>
+
+    <!-- check box -->
+    <form action="/server">
+
+        <!-- by default not clicked -->
+        <input type="checkbox" name="age" id="a1">
+        <label for="a1">I am over 18</label>
+        <button>sumbmit</button>
+        <br>
+
+
+        <!-- already clicked -->
+        <input type="checkbox" name="age" id="a2" checked>
+        <label for="a2">I am not over 18</label> 
+        <br>    <    <br><br>    <br>
+
+
+
+
+        <!-- radio button  -->
+
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Other</label>
+
+
+        <br><br>
+
+        <!-- dropdown -->
+         <select name="cars" id="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi" selected>Audi</option> <!-- by default audi is selected -->
+         </select>
+          <br><br>
+
+         <!-- range -->
+          <label for="vol">Select</label >
+            <input type="range" name="vol" id="vole" min="0" max="100" step="10" value="50"> <!-- step help to increase by 10, by default value is 50 -->
+             <br><br>
+
+            <br><br>
+            <!-- text area -->
+             <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+
+    </form>
+</body>
+</body>
+</html>
