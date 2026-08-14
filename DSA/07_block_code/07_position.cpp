@@ -38,7 +38,7 @@ int main() {
 
     Solution s;
 
-    vector<int> nums = {4, 5, 6, 7, 0, 1, 2};
+    vector<int> nums = {9,8,6, 7, 0, 1, 2};
     int target = 2;
 
     int result = s.search(nums, target);
