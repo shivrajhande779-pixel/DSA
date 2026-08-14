@@ -61,11 +61,11 @@ int main() {
     cout << "Output:" << endl;
 
     for (auto quad : result) {
-        cout << "{ ";
+        cout << "[ ";
         for (int x : quad) {
             cout << x << " ";
         }
-        cout << "}" << endl;
+        cout << "]" << endl;
     }
 
     return 0;
