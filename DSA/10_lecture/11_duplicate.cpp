@@ -7,7 +7,7 @@ int main() {
 
     srand(time(0));
 
-    const int n = 15;
+    const int n = 20;
     int arr[n];
 
     // Generate random numbers
