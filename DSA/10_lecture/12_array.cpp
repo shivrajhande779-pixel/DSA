@@ -18,7 +18,7 @@ int findMax(int arr[], int n) {
 int main() {
     srand(time(0));
 
-    int n = 10;
+    int n = 20;
     int arr[10];
 
     cout << "Random Array: ";
