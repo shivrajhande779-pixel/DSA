@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+/* Loader */
+.loader {
+    width: 70px;
+    height: 70px;
+    border: 8px solid #ddd;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+
+    animation: loading 1s linear infinite;
+}
+
+/* Loader Animation */
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+} 
