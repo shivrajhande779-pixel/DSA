@@ -65,7 +65,7 @@ public:
         cout << "Average : " << average() << endl;
         cout << "Highest : " << highest() << endl;
         cout << "Lowest  : " << lowest() << endl;
-        cout << "Grade   : " << grade() << endl;
+        cout << "Your Grade   : " << grade() << endl;
     }
 };
 
