@@ -62,7 +62,7 @@ int main() {
     vector<int> arr(n);
 
     cout << "Enter elements:\n";
-    for (int i = 1; i < n; i++) {
+    for (int i = 3; i < n; i++) {
         cin >> arr[i];
     }
 
