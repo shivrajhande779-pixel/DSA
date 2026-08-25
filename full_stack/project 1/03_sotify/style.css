@@ -1,7 +1,7 @@
 *{
     font-family: sans-serif;
     margin: 0;
-    /* background-color: rgb(13, 13, 13); */
+    /* background-color: #000; */
     /* padding: 0; */
     color: white;
     overflow: hidden;
@@ -10,12 +10,14 @@
 .main{
     display: flex;
     height: 100vh;
+    padding: 0.5rem;
 }
 
 .sidebar{ 
     width: 350px;
-    background-color: #b11f97;
+    background-color: #121212;
     border-radius: 1rem;
+    margin-right: 0.5rem;
 }
 
 .content{
@@ -35,7 +37,6 @@
 
 .navbar{
     height: 100px;
-    /* background-color: #1eac1e; */
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
@@ -44,43 +45,118 @@
     background-color: #121212;
 }
 
-.nav-optio{
+.nav-option{
     margin-bottom: 0.4rem;
     padding: 0.5rem 0.75rem;
-    line-height: 40px;
+    line-height: 2.5rem;
     opacity: 0.7;
     /* box-shadow: 2px 2px 1px wheat; */
 }
 
-.nav-optio:hover{
+.nav-option:hover{
     opacity: 1;
 }
 
-.nav-optio i{
+.nav-option i{
     font-size: 1.3rem;
     margin-right: 1.3rem;
     margin-left: 1.3rem;
+    background-color: #121212;
 }
 
-.nav-optio a{
-    font-size: 1.2rem;
+.nav-option a{
+    font-size: 1.3rem;
     text-decoration: none;
+    background-color: #121212;
+    margin-left: 1rem;
 }
 
 .library{
     background-color: #121212;
     border-radius: 1rem;
-    justify-content: space-between;
-     align-items: center;
-   
+    height: 100%;
+    margin-top: 0.6rem;
+    padding: 0.5rem 0.75rem;
 }
 
 .option{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.option img{
+.lib-option img{
     height: 1.25rem;
     width: 1.25rem;
+
 }
 
+.icon{
+    font-size: 1.25rem;
+      display: flex;
+    
+}
+
+
+.option i{
+    opacity: 0.7rem;
+    margin-right: 1rem;
+
+}
+
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+    
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+.box-p2{
+    font-size: 0.85rem;
+    padding: 0.5rem;
+}
+.badge{
+    height: 2rem;
+    width: fit-content;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0; 
+}
+
+.sticky-nav-icons{
+    margin-left: 0.8;
+}
+
+
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sticky-nav-options div{
+    margin-left: 2rem;
+}
