@@ -5,7 +5,7 @@ using namespace std;
 int main() {
     string s;
 
-    cout << "Enter a string: ";
+    cout << "Enter a strings: ";
     cin >> s;
 
     unordered_map<char, int> freq;
