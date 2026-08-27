@@ -25,6 +25,7 @@
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
 }
 
 .music_player{
@@ -135,6 +136,16 @@
     margin-top: 0.5rem;
 }
 
+.dark-badge{
+     background-color: #000;
+     color: white;
+}
+
+/* .badge i{
+    color: white;
+    background-color: aqua;
+} */
+
 .sticky-nav{
     position: sticky;
     top: 0;
@@ -143,10 +154,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0 1rem 0; 
+    z-index: 10;  /*for page overlay*/
 }
 
 .sticky-nav-icons{
-    margin-left: 0.8;
+    margin-left: 0.8rem;
 }
 
 
@@ -157,6 +169,107 @@
 }
 
 
-.sticky-nav-options div{
-    margin-left: 2rem;
+.nav-item{
+    margin-right: 1rem;
+}
+
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+h2{
+    margin: 1.75rem 0 1.75rem 0;
+}
+
+.card{
+    background-color: #232323;
+    width: 150px;
+
+    border-radius: 0.5rem;
+    padding: 0 1.5rem 0 1.5rem;
+    margin: 1rem 1.5rem 0 1.5rem;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+
+
+.music_player{
+    display: flex;
+    padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+}
+
+.music-name{
+    width: 350px;
+     display: flex;
+    background-color: rgb(6, 6, 6);
+}
+
+.music-button{
+    background-color: deeppink;
+    flex: 1;
+}
+
+.music-details{
+    background-color: midnightblue;
+    width: 350px;
+}
+
+.music-img{
+    height: 3rem;
+    width: 3rem;
+    padding: 0.7rem;
+    border-radius: 0.9rem;
+}
+
+.music-name-img{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+
+}
+
+.music-info{
+    justify-content: center;
+    padding: 1rem;
+    margin-left: 0.5rem;
+}
+
+.song-name{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.song-writer{
+    font-size: 0.85rem;
+    font-weight: 100;
+}
+
+.music-info-icons{
+    padding: 1.5rem 0.75rem 1.5rem 0.75rem;
+    margin-left: 1rem;
+}
+
+.music-info-icons i{
+    margin-left: 0.8rem;
+    font-size: 1.25rem;
 }
