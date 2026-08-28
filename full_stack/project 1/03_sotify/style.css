@@ -219,19 +219,19 @@ h2{
 }
 
 .music-name{
-    width: 350px;
+    width: 25%;
      display: flex;
     background-color: rgb(6, 6, 6);
 }
 
-.music-button{
+.player{
     background-color: deeppink;
-    flex: 1;
+    width: 50%;
 }
 
-.music-details{
-    background-color: midnightblue;
-    width: 350px;
+.controls{
+    background-color: rgb(18, 18, 172);
+    width: 25%;
 }
 
 .music-img{
