@@ -21,7 +21,7 @@ int main() {
         }
     }
 
-    int top = 0;
+    int top = 1;
     int bottom = rows - 1;
     int left = 0;
     int right = cols - 1;
