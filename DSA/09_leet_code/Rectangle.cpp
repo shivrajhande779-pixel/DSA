@@ -6,7 +6,7 @@ public:
                 int l = area / w;
                 return {l, w};
             }
-        }
+          }
 
         return {};
     }
