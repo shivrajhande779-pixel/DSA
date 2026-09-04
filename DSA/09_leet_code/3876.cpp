@@ -13,7 +13,7 @@ public:
             return true;
         int mn = *min_element(nums1.begin(), nums1.end());
         if (mn % 2 == 1)
-            return true;
+        return true;
         return false;
     }
 };
