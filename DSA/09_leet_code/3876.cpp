@@ -11,7 +11,7 @@ public:
         }
         if (!hasOdd || !hasEven)
             return true;
-         int mn = *min_element(nums1.begin(), nums1.end());
+        int mn = *min_element(nums1.begin(), nums1.end());
         if (mn % 2 == 1)
         return true;
         return false;
