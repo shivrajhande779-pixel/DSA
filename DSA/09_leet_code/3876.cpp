@@ -14,6 +14,6 @@ public:
         int mn = *min_element(nums1.begin(), nums1.end());
         if (mn % 2 == 1)
         return true;
-        return false;
+        return   false;
     }
 };
