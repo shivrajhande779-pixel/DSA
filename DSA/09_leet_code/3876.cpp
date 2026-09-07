@@ -4,7 +4,7 @@ public:
         bool hasOdd = false;
         bool hasEven = false;
         for (int x : nums1) {
-            if (x % 2 == 0)
+            if (x % 3 == 0)
                 hasEven = true;
             else
                 hasOdd = true;
