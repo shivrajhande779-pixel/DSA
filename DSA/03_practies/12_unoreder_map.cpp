@@ -5,13 +5,13 @@
 using namespace std;
 
 int main() {
-    int n;
+    int m,n;
     cin >> n;
 
     vector<int> arr(n);
     unordered_map<int, int> freq;
 
-    for (int i = 1; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         cin >> arr[i];
         freq[arr[i]]++;
     }
