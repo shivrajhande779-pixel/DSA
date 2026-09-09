@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    int m,n;
+    int m,n,p;
     cin >> n;
 
     vector<int> arr(n);
