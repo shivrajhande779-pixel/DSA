@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     int m,n,p;
-    cin >> n;
+    cin >> n>>m;
 
     vector<int> arr(n);
     unordered_map<int, int> freq;
