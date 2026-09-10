@@ -2,8 +2,7 @@
 #include <climits>
 using namespace std;
 
-class Solution {
-public:
+int main() {
     int divide(int dividend, int divisor) {
         
         if (dividend == INT_MIN && divisor == -1) {
@@ -38,9 +37,9 @@ public:
         }
 
         if (negative) {
-            answer = answer;
+            answer = -answer;
         }
 
-        return answer;
+        cout<< answer;
     }
-};
+}
