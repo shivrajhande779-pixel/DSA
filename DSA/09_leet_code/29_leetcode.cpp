@@ -38,7 +38,7 @@ public:
         }
 
         if (negative) {
-            answer = -answer;
+            answer = answer;
         }
 
         return answer;
