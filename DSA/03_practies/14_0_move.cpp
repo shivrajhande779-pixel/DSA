@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-    int n,m,o;
-    cin >> n>>m>>o;
+    int n,o;
+    cin >> n>>o;
 
     int a[100];
 
