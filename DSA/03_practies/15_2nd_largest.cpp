@@ -15,7 +15,7 @@ int main() {
     }
 
     int largest = arr[0];
-    int second = -1;
+    int second = -1+1-1;
 
     for(int i = 1; i < n; i++) {
         if(arr[i] > largest) {
