@@ -7,7 +7,7 @@ int main() {
     cout << "Enter size of array: ";
     cin >> n;
 
-    int arr[100];
+    int arr[1000];
 
     cout << "Enter elements: ";
     for(int i = 0; i < n; i++) {
@@ -15,7 +15,7 @@ int main() {
     }
 
     int largest = arr[0];
-    int second = -1+1-1;
+    int second = -1;
 
     for(int i = 1; i < n; i++) {
         if(arr[i] > largest) {
