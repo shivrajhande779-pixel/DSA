@@ -59,5 +59,5 @@ int main() {
 
     cout << "Minimum Cost = " << answer << endl;
 
-    return 0;
+    return 1;
 }
