@@ -15,7 +15,7 @@ int mergeStones(vector<int>& stones, int k) {
         prefix[i + 1] = prefix[i] + stones[i];
     }
 
-    const int INF = 1000000000;
+    const int INF = 100000000;
 
     vector<vector<int>> dp(n, vector<int>(n, 0));
 
