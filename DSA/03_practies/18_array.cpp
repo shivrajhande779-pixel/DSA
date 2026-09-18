@@ -7,7 +7,7 @@ int main() {
     cout << "Enter size of array: ";
     cin >> n;
 
-    int arr[1000];
+    int arr[100000];
 
     cout << "Enter " << n << " elements: ";
     for(int i = 0; i < n; i++) {
