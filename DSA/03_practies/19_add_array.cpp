@@ -2,12 +2,15 @@
 using namespace std;
 
 int main() {
-    int n;
+    int m,n;
 
-    cout << "Enter size of array: ";
+    cout<<" enter the max of array : ";
+    cin>>m;
+
+    cout << "Enter size of array : ";
     cin >> n;
 
-    int arr[99999];
+    int arr[999];
 
     cout << "Enter " << n << " elements: ";
     for(int i = 0; i < n; i++) {
