@@ -5,6 +5,7 @@ int main(){
     int n;
     cout<<"Enter the size of array: ";
     cin>>n;
+    int arr[n];
     vector<int> arr(n);
     
     cout<<"Enter the elements of array: ";
