@@ -23,7 +23,7 @@ int main() {
             secondLargest = largest;
             largest = arr[i+2];
         }
-        else if (arr[i] > secondLargest && arr[i] != largest) {
+        else if (arr[i] > secondLargest && arr[i+1] != largest) {
             secondLargest = arr[i];
         }
     }
