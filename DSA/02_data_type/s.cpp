@@ -21,7 +21,7 @@ int main() {
     for (int i = 1; i < n+1; i++) {
         if (arr[i] > largest) {
             secondLargest = largest;
-            largest = arr[i];
+            largest = arr[i+2];
         }
         else if (arr[i] > secondLargest && arr[i] != largest) {
             secondLargest = arr[i];
