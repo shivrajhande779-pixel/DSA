@@ -11,8 +11,8 @@ int main(){
                 n=n+1;
             }
             else if(ch=='V'){
-                if(p=='I'){
-                    n=n+5-2;
+                if(p=='I'){  
+                    n=n+5- 2;
                 }
                 else n=n+5;
             } 
