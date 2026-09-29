@@ -13,7 +13,7 @@ int main() {
 
         for(int i=0;i<n;i++){
             sum=sum+nums[i];
-            // cout<<"sum is : "<<sum<<endl;
+            
         }
         cout<<"size is : "<<n<<endl;
         cout<<"sum is : "<<sum<<endl;
