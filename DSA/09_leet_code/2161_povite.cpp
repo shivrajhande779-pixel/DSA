@@ -22,7 +22,7 @@ int main(){
         for(int i=0;i<n;i++){
             if(nums[i]==pivot){
                 mx++;
-                continue;practies
+                continue;
             }
             
 
