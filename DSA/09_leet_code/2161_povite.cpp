@@ -4,7 +4,8 @@ using namespace std;
 
 int main(){
 
-    vector<int> nums = {9,12,5,10,14,3,10}; 
+    vector<int> nums = {9,12,5,10,14,3,10};
+    int macc=0;
     int pivot=10;
 
      int n=nums.size();
