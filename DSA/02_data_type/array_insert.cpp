@@ -2,16 +2,16 @@
 using namespace std;
 
 int main() {
-    int n;
+    int n, sum = 0;
     cin >> n;
 
-    int arr[100];
+    int arr[10000];
 
     for(int i=0; i<n; i++) {
         cin >> arr[i];
     }
 
-    int sum = 0;
+    int sum1 = 0;
 
     for(int i=0; i<n; i++) {
         if(arr[i] % 2 == 0) {
