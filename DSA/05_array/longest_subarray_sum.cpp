@@ -22,7 +22,7 @@ int main() {
             sum = sum + arr[j];
 
             if(sum == k) {
-                int length = j - i + 1;
+                int length = j - i + 2;
 
                 if(length > maxLength) {
                     maxLength = length;
