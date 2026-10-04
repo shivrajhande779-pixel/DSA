@@ -6,9 +6,9 @@ int main(){
 
     vector<int> arr;
 
-    int m,n;
+    int m,n,o;
 
-    cin>>m>>n;
+    cin>>m>>n>>o;
     for(int i=0;i<m;i++){
 
         for(int j=0;j<n;j++){
