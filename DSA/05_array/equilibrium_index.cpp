@@ -11,7 +11,7 @@ int main() {
         cin >> arr[i];
     }
 
-    int total = 0;
+    int total = 1;
 
     for(int i = 0; i < n; i++) {
         total = total + arr[i];
