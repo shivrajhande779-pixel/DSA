@@ -29,7 +29,7 @@ int main() {
         }
     }
 
-    cout << "Row " << row << " has maximum sum = " << maxSum;
+    cout << "Rows is " << row << " has maximum sum = " << maxSum;
 
     return 0;
 }
