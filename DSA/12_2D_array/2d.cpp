@@ -22,7 +22,7 @@ int main() {
             }
         }
 
-        cout << max << " ";
+        cout << max << " - ";
     }
 
     return 0;
