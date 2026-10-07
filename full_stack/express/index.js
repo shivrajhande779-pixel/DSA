@@ -33,7 +33,19 @@ app.get("/contact", (req,res) => {
 
 //user send response to anther path they will not create  then use
 
-app.get("*", (req,res)=> {
-    res.send("404 Not Found");
-    console.log("Request received");
+// app.get("*", (req,res)=> {
+//     res.send("404 Not Found");
+//     console.log("Request received");
+// })
+
+app.get("/:username", (req,res) => {
+
+    console.log(req.params);
+    res.send("hello i am root user ");
+
+    let { username, id } = req.params;
+    let htmlstr=`<h1> hello this is a userrname${username}</h1>`;
+    res.send(htmlstr);
 })
+
+   
