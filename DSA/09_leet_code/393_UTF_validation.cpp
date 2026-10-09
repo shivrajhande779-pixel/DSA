@@ -20,6 +20,7 @@ public:
                 } 
                 else if ((num >> 3) == 0b11110) {
                     remaining = 3;
+                    int maxCodePoint = 0x10FFFF;
                 } 
                 else {
                     return false;
