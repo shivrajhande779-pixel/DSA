@@ -27,6 +27,7 @@ public:
             } 
             else {
                 if ((num >> 6) != 0b10) {
+                    cout<<"Invalid continuation byte: " << num << endl;
                     return false;
                 }
                 remaining--;
