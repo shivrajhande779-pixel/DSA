@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>insta</title>
+</head>
+<body>
+    <h1> insta home page </h1>
+    
+    <p> Your profile name is <%= data.name %></p>
+    <button>Follow</button>
+    <button>Message</button>
+
+    <!-- useing loop in ejs -->
+
+    <h2>Follower : <%= data.followers %> &nbsp;  Following : <%= data.following%> </h2>
+
+    <hr>
+
+    <% for(let post of data.posts){ %>
+        
+        <img src="<%= post.image %>" alt="some images">
+        <p>like : <%= post.likes %>   Comments : <%= post.comments %> </p>
+
+    <% } %>
+       
+</body>
+</html>

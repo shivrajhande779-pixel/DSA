@@ -7,6 +7,12 @@
 </head>
 <body>
     <h1>Dice Roll</h1>
-    <p>You rolled a: <%= dicval %></p>
+    <h1>You rolled a: <%= dicval %></h1>
+
+    <% if(dicval==6) {%>
+    <p>Congratulations! You rolled the highest number!</p>
+    <h2>Nice! , Roll again!</h2>
+
+    <% }%>
 </body>
 </html>

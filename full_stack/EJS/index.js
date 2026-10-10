@@ -19,10 +19,30 @@ app.get("/",(req,res)=>{
     res.send("this is a home page");
 })
 
-
-//conting like db 
+//sending data to ejs file
 
 app.get("/roll" , (req,res)=>{
     let dicval=Math.floor(Math.random()*6)+1;
     res.render("roll.ejs",{dicval});
 })
+
+
+
+//install ejs
+
+app.get("/ig/:username",(req,res) =>{
+
+    
+
+    let {username} = req.params;
+    const instadata = require("./data.json");
+    const data = instadata[username];
+    console.log(data);
+
+    if (!data) {
+        return res.render("error.ejs");
+    }else{
+        res.render("insta.ejs",{data});
+    }0
+})
+
