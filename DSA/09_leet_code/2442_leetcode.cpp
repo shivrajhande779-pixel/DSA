@@ -6,6 +6,7 @@ using namespace std;
 
 int main() {
     vector<int> nums = {2,2,5,6,2,2};
+    vector<int> ans;
 
     int n = nums.size();
     int size =n;
