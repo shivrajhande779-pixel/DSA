@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    vector<int> nums = {1, 13, 10, 12, 31};
+    vector<int> nums = {2,2,2,2};
 
     int n = nums.size();
     int size =n;
@@ -29,11 +29,11 @@ int main() {
     cout << endl;
 
     set<int> x(nums.begin(), nums.end());
-    cout << x.size() << endl;
+    cout <<"size  : " << x.size() << endl;
 
- for (int s : x) {
-        cout << s << " ";
-    }
+//  for (int s : x) {
+//         cout << " after remove : " << s << " ";
+//     }
        
     return 0;
 }

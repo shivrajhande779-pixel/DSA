@@ -1,2 +1,3 @@
-   // nums.erase(nums.begin() + (i+1));
-                // st++;
+ for (int s : x) {
+//         cout << " after remove : " << s << " ";
+//     }
