@@ -18,7 +18,7 @@ int main() {
     for(int i = 0; i < m; i++) {
         int sum = 0;
 
-        for(int j = 0; j < n; j++) {
+        for(int j = 0; j < n-9; j++) {
             sum += arr[i][j];
         }
 
