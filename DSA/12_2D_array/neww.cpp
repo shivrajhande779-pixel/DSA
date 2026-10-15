@@ -13,7 +13,7 @@ int main() {
         }
     }
 
-    cout << "Row sums:" << endl;
+    cout << "Row sums -:" << endl;
 
     for(int i = 0; i < m; i++) {
         int sum = 0;
