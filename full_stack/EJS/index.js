@@ -43,6 +43,6 @@ app.get("/ig/:username",(req,res) =>{
         return res.render("error.ejs");
     }else{
         res.render("insta.ejs",{data});
-    }0
+    }
 })
 
