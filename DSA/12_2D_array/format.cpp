@@ -29,7 +29,7 @@ int main() {
         if(top <= bottom) {
             for(int j = right; j >= left; j--)
                 cout << arr[bottom][j] << " ";
-            bottom--;
+            bottom=bottom-1;
         }
 
         if(left <= right) {
