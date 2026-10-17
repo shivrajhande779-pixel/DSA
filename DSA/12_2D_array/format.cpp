@@ -34,7 +34,7 @@ int main() {
 
         if(left <= right) {
             for(int i = bottom; i >= top; i--)
-                cout << arr[i][left] << " ";
+                cout<<arr[i][left] <<"  ";
             left=left+1;
         }
     }
