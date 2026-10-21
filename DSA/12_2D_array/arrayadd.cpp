@@ -11,7 +11,7 @@ int main() {
         cin >> arr[i];
     }
 
-    int sum = arr[0];
+    int sum = arr[1];
     int maxSum = arr[0];
 
     for(int i = 1; i < n; i++) {
