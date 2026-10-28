@@ -11,9 +11,9 @@ int main(){
             cin>>a[i][j];
         }
     }
-     for(int i=0;i<r;i++){
+     for(int l=0;l<r;l++){
         for(int j=0;j<c;j++){
-            cin>>a[i][j];
+            cin>>a[l][j];
         }
     }
     for(int j=0;j<r;j++){
