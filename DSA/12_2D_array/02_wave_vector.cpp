@@ -2,8 +2,8 @@
 #include<vector>
 using namespace std;
 int main(){
-    int r,c;
-    cin>>r>>c;
+    int r,c,t;
+    cin>>r>>c>>t;
     vector<vector<int>> a(r,vector<int>(c));
 
     for(int i=0;i<r;i++){
