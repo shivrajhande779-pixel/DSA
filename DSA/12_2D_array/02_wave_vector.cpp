@@ -11,6 +11,11 @@ int main(){
             cin>>a[i][j];
         }
     }
+     for(int i=0;i<r;i++){
+        for(int j=0;j<c;j++){
+            cin>>a[i][j];
+        }
+    }
     for(int j=0;j<r;j++){
         if(j%2==0){
             for(int i=0;i<r;i++){
