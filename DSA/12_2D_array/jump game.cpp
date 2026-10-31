@@ -12,7 +12,7 @@ int main(){
     int reach=0;
 
     for(int i=0;i<n;i++){
-        if(i>reach){
+        if(i>reach ){
             cout<<"false";
             return 0;
         }
