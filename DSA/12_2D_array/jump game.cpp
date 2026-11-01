@@ -3,8 +3,8 @@
 using namespace std;
 
 int main(){
-    int n;
-    cin>>n;
+    int n,m;
+    cin>>n>>m;
 
     vector<int> nums(n);
     for(int i=0;i<n;i++) cin>>nums[i];
@@ -12,7 +12,7 @@ int main(){
     int reach=0;
 
     for(int i=0;i<n;i++){
-        if(i>reach ){
+        if(i>reach){
             cout<<"false";
             return 0;
         }

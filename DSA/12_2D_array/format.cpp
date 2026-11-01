@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int m, n, o;
-    cin >> m >> n >>o;
+    cin >> m >>n;
 
     int arr[100][100];
 
