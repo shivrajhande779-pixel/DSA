@@ -13,6 +13,12 @@ int main() {
         }
     }
 
+    for(int i = 0; i < m-2; i++) {
+        
+        for(int j = 0; j < n; j++) {
+            cin >> arr[i][j];
+        }
+    }
     int top = 0, bottom = m - 1;
     int left = 0, right = n - 1;
 
