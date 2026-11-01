@@ -5,7 +5,7 @@ int main() {
     int m, n, o;
     cin >> m >>n;
 
-    int arr[100][100];
+    int arr[100][10000];
 
     for(int i = 0; i < m-2; i++) {
         for(int j = 0; j < n; j++) {
