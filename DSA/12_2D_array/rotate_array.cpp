@@ -4,8 +4,9 @@
 using namespace std;
 
 int main(){
-    int n,k;
+    int n,m,k;
     cin>>n;
+    cin>>m;
 
     vector<int> nums(n);
 
