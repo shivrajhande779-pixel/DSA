@@ -3,6 +3,8 @@ using namespace std;
 
 int main() {
     int m, n;
+
+    cout<<"Enter the the number : ";
     cin >> m >> n;
 
     int arr[100][100];
