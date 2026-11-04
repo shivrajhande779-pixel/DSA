@@ -5,6 +5,7 @@ int main() {
     int m, n;
 
     cout<<"Enter the the number : ";
+    cout<<"Enter the the n : ";
     cin >> m >> n;
 
     int arr[100][100];
