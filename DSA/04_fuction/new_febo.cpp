@@ -20,4 +20,10 @@ int main(){
         }
         cout<<endl;
     }
+
+    int m=0;
+    for(int i=0;i<n;i++){
+        cout<<"given this number : ";
+        cin>>m;
+    }
 }
