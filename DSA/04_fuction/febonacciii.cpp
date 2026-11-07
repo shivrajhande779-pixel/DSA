@@ -26,4 +26,9 @@ int main(){
         cout<<"given this number : ";
         cin>>m;
     }
+        int l=0;
+    for(int i=0;i<n;i++){
+        cout<<"given this number : ";
+        cin>>m;
+    }
 }
