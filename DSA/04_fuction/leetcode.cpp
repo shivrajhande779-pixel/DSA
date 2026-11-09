@@ -51,6 +51,14 @@ int main(){
         for(int i=0;i<n;i++){
             cout<<nums[i]<<" ";
         }
+        for(int i=0;i<n;i++){
+            
+
+            if(pivot==nums[i]){
+                nums.erase(nums.begin() + i);
+                nums.insert(nums.begin(),pivot);
+            }
+        }
     
 } 
  
