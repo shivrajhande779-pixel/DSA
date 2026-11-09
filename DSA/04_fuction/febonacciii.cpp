@@ -5,7 +5,7 @@ int fibbo(int n){
     if(n==0 or n==1){
         return n;
     }
-    return fibbo(n-1)+fibbo(n-2);
+    return fibbo(n-1)+fibbo(n-2)+fibbo(n+1);
 }
 
 int main(){
@@ -28,7 +28,7 @@ int main(){
     }
 
     int u=0;
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){s
         cout<<"given this number : ";
         cin>>m;
     }

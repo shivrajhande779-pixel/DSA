@@ -17,6 +17,15 @@ int main(){
                 nums.insert(nums.begin(),pivot);
             }
         }
+        for(int i=0;i<n;i++){
+            
+
+            if(pivot==nums[i]){
+                nums.erase(nums.begin() + i);
+                nums.insert(nums.begin(),pivot);
+            }
+        }
+        
 
           int st=0,mx=0;
 
