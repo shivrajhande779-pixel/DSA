@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 #include<vector>
 using namespace std;
 
@@ -16,7 +17,7 @@ int main(){
         cin>>ans[i];
     }
 
-
+    
     int largest=0;
     int second=0;
 
