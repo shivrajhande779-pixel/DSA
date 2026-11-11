@@ -7,10 +7,15 @@ int main(){
     cin>>n;
 
     vector<int> nums(n);
+    vector<int> ans;
 
     for(int i=0;i<n;i++){
         cin>>nums[i];
     }
+     for(int i=0;i<n;i++){
+        cin>>ans[i];
+    }
+
 
     int largest=0;
     int second=0;
