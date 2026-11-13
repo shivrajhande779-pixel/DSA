@@ -14,7 +14,7 @@ int main() {
 
     cin >> m;
 
-    int b[100];
+    int b[10000];
 
     for(int i = 0; i < m; i++) {
         cin >> b[i];
