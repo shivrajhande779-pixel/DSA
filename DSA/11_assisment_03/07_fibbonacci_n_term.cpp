@@ -15,6 +15,7 @@ int main(){
         extra=sum+temp;
         temp=sum;
         sum=extra;
+        temp=extra;
         cout<<extra<<" ";
         }
     }
