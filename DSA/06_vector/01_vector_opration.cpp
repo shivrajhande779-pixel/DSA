@@ -18,7 +18,7 @@ int main(){
     cout<<vec[0]<<" ";
     cout<<vec[1]<<" ";
     cout<<vec[2]<<" ";
-    cout<<vec[3]<<" ";
+    cout<<vec[3]<<" "<<endl;
     cout<<vec[4]<<" "<<endl;
 
     //size
