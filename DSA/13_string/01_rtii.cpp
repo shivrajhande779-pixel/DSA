@@ -31,7 +31,6 @@ int main(){
     //str size
     cout<<str5.size()<<endl;
     
-    //convert lower case character
-    cout<<tolower(str5[st]);
+  C
 
 }
